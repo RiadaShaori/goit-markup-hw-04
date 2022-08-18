@@ -116,12 +116,12 @@ img {
 }
 
 .contact:hover,
-.contact:active {
+.contact:focus {
     color: var(--accent--color);
 }
 
 .contact:hover .icon,
-.contact:active .icon {
+.contact:focus .icon {
     fill: var(--accent--color);
 }
 
@@ -288,10 +288,9 @@ img {
 
 /* Team section */
 
-/* .team {
+.team {
     background-color: #F5F4FA;
-    width: 1600px;
-} */
+} 
 
 .team-member-list {
     display: flex;
@@ -301,6 +300,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
+    background-color: #fff;
 }
 
 .team-members{
@@ -310,7 +310,6 @@ img {
 }
 
 .team-member-name {
-    margin-top: 30px;
     margin-bottom: 10px;
     
     font-weight: 500;
@@ -355,12 +354,12 @@ img {
 
 
 .team-link:hover,
-.team-link:active {
+.team-link:focus {
     background-color: #2196F3;
 }
 
 .team-link:hover .icon,
-.team-link:active .icon {
+.team-link:focus .icon {
     fill: #FFFFFF;
 }
 
@@ -370,7 +369,6 @@ img {
     display: flex;
     justify-content: center;
 
-    margin-bottom: 94px;
 }
 
 .clients-list>.item:not(:last-child) {
@@ -392,12 +390,12 @@ img {
 }
 
 .clients-link:hover,
-.clients-link:active {
+.clients-link:focus {
     border: 1px solid #2196F3;
 }
 
 .clients-link:hover .icon,
-.clients-link:active .icon {
+.clients-link:focus .icon {
     fill: #2196F3;
 }
 
@@ -484,7 +482,8 @@ footer {
     fill:#FFFFFF;
 }
 
-.social-media-item>.link:hover {
+.social-media-item>.link:hover,
+.social-media-item>.link:focus {
     background-color: #2196F3;
 }
 
@@ -523,6 +522,7 @@ footer {
 }
 
 .btn:hover,
+.btn:focus,
 .btn:active {
     color: #FFFFFF;
     background: var(--accent--color);
@@ -558,7 +558,7 @@ footer {
 }
 
 .gallery-item:hover,
-.gallery-item:active {
+.gallery-item:focus {
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -572,7 +572,6 @@ footer {
 }
 
 .gallery-item-title {
-    margin-top: 20px;
     margin-bottom: 4px;
 
     font-weight: 700;
